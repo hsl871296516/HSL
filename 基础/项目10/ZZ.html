@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        display: flex;
+        width: 700px;
+        height: 300px;
+        border-left: 1px solid yellowgreen;
+        border-bottom: 1px solid yellowgreen;
+        margin: 50px auto;
+        justify-content: space-around;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .box div{
+        display: flex;
+        width: 50px;
+        background-color: yellowgreen;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box div span{
+        margin-top: -20%;
+    }
+
+    .box div h4{
+        margin-bottom: -35px;
+        width: 70px;
+        margin-left: -10px;
+    }
+</style>
+</head>    
+<body>
+    <div class="box">
+        <div style="height: 123px;">
+            <span>123</span>
+            <h4>第一季度</h4>
+        </div>
+        <div style="height: 156px;">
+            <span>156</span>
+            <h4>第二季度</h4>
+        </div>
+        <div style="height: 128px;">
+            <span>120</span>
+            <h4>第三季度</h4>
+        </div>
+        <div style="height: 210px;">
+            <span>210</span>
+            <h4>第四季度</h4>
+        </div>
+        <div style="height: 123px;">
+            <span>123</span>
+            <h4>第一季度</h4>
+        </div>
+        <div style="height: 156px;">
+            <span>156</span>
+            <h4>第二季度</h4>
+        </div>
+        <div style="height: 128px;">
+            <span>120</span>
+            <h4>第三季度</h4>
+        </div>
+        <div style="height: 210px;">
+            <span>210</span>
+            <h4>第四季度</h4>
+        </div>
+        <div style="height: 123px;">
+            <span>123</span>
+            <h4>第一季度</h4>
+        </div>
+        <div style="height: 156px;">
+            <span>156</span>
+            <h4>第二季度</h4>
+        </div>
+        <div style="height: 128px;">
+            <span>120</span>
+            <h4>第三季度</h4>
+        </div>
+        <div style="height: 210px;">
+            <span>210</span>
+            <h4>第四季度</h4>
+    </div>
+    <script>
+        let arr =[]
+        for(let i = 1; i <= 4; i++){
+            arr.push(prompt('请输入第 $(i) 季度的数据'))
+        }
+        console.log(arr)
+        document.write(`<div class="box">`)
+        for (let i = 0; i < arr.length; i++){
+            document.write(`
+            <div style="height: 123px;">
+                <span>123</span>
+                <h4>第一季度</h4>
+            </div>
+            <div style="height: 156px;">
+                <span>156</span>
+                <h4>第二季度</h4>
+            </div>
+            <div style="height: 128px;">
+                <span>120</span>
+                <h4>第三季度</h4>
+            </div>
+            <div style="height: 210px;">
+                <span>210</span>
+                <h4>第四季度</h4>
+            </div>
+            `)
+        }
+        document.write(`</div>`)
+    </script>
+</body>
+</html>
+background-color: #f7f7f7;
